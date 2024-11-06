@@ -94,6 +94,17 @@ you can find your project/version/workspace slugs upon publishing the project:
           INCLUDE_GITHUB_METADATA: true
 ```
 
+## Release
+1. Update version in `package.json`
+2. run `npm run build`
+3. commit changes and add tag:
+   ```bash
+      git tag <version>
+      git push origin main --tags
+      ```
+4. Create a release on GitHub with the same version
+5. Update the version in the [usage](#usage) section of this README
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/theneoAPIDoc/api-documentation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
